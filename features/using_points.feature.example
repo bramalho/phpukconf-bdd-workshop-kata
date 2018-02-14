@@ -1,0 +1,9 @@
+Feature: Earning points from flying
+
+  Scenario: Earning points when paying cash
+    Given a flight "XX-100" flies the "LHR-MAN" route
+    And the "LHR-MAN" route is listed as being worth 50 points
+    And my ticket on flight "XX-100" was scanned at the gate
+    And my loyalty number "12325235" was recorded on the ticket
+    When flight "XX-100" lands at "MAN"
+    Then my loyalty account should be credited with 50 points
