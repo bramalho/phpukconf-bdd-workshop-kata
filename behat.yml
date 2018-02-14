@@ -1,9 +1,9 @@
 default:
   suites:
     domain:
-      contexts: [ PointsContext]
+      contexts: [PointsContext]
 #    services:
-#      contexts: [ Services\PointsContext]
+#      contexts: [Services\PointsContext]
 #    endtoend:
 #      filters:
 #        tags: "@critical"
