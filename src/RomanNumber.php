@@ -18,7 +18,7 @@ class RomanNumber
     public function convert(int $number)
     {
         $romanNumber = '';
-        while ($number > 0) {
+        while ($number) {
             foreach ($this->map as $int => $roman) {
                 if($number >= $int) {
                     $number -= $int;
