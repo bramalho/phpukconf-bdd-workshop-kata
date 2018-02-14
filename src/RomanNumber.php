@@ -9,6 +9,7 @@ class RomanNumber
     public function convert(int $number)
     {
         $map = [
+            'IX'    => 9,
             'V'     => 5,
             'IV'    => 4,
             'I'     => 1,
