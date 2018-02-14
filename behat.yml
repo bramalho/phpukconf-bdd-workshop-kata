@@ -3,7 +3,7 @@ default:
     domain:
       contexts: [PointsContext]
 #    services:
-#      contexts: [ Services\PointsContext]
+#      contexts: [Services\PointsContext]
 #    endtoend:
 #      filters:
 #        tags: "@critical"
