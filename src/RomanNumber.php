@@ -8,10 +8,23 @@ class RomanNumber
      */
     public function convert(int $number)
     {
-        if ($number === 1) {
-            return 'I';
+        $map = [
+            'V'     => 5,
+            'IV'    => 4,
+            'I'     => 1,
+        ];
+        $romanNumber = '';
+
+        while ($number > 0) {
+            foreach ($map as $roman => $int) {
+                if($number >= $int) {
+                    $number -= $int;
+                    $romanNumber .= $roman;
+                    break;
+                }
+            }
         }
 
-        return null;
+        return $romanNumber;
     }
 }
