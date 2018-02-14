@@ -47,4 +47,19 @@ class RomanNumberSpec extends ObjectBehavior
     {
         $this->convert(9)->shouldReturn('IX');
     }
+
+    function it_should_return_ten()
+    {
+        $this->convert(10)->shouldReturn('X');
+    }
+
+    function it_should_return_twelve()
+    {
+        $this->convert(12)->shouldReturn('XII');
+    }
+
+    function it_should_return_twenty()
+    {
+        $this->convert(20)->shouldReturn('XX');
+    }
 }
