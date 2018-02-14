@@ -9,15 +9,15 @@ class RomanNumber
     public function convert(int $number)
     {
         $map = [
-            'IX'    => 9,
-            'V'     => 5,
-            'IV'    => 4,
-            'I'     => 1,
+            9 => 'IX',
+            5 => 'V',
+            4 => 'IV',
+            1 => 'I',
         ];
         $romanNumber = '';
 
         while ($number > 0) {
-            foreach ($map as $roman => $int) {
+            foreach ($map as $int => $roman) {
                 if($number >= $int) {
                     $number -= $int;
                     $romanNumber .= $roman;
